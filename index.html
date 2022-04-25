@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<!-- This is a practice project so expect to see a lot of comments -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Toudai Lanterns</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!-- Bootstrap core CSS -->
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">灯台 Paper Lanterns</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#marketing">Our lanterns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#featurette">Our history</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact-us">Contact Us</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="img" src="images/2.jpg" alt="">
+          <!-- <svg class="bd-placeholder-img" width="100vw" height="100vw" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#777" />
+          </svg> -->
+
+          <div class="container">
+            <div class="carousel-caption text-center">
+              <!-- <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p> -->
+              <p><a class="btn btn-lg btn-success" href="#marketing">View our lanterns</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="img" src="images/3.jpg" alt="">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg> -->
+
+          <div class="container">
+            <div class="carousel-caption text-center">
+              <!-- <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p> -->
+              <p><a class="btn btn-lg btn-success" href="#marketing">View our lanterns</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="img" src="images/1.jpg" alt="">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg> -->
+
+          <div class="container">
+            <div class="carousel-caption text-center">
+              <!-- <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p> -->
+              <p><a class="btn btn-lg btn-success" href="#marketing">View our lanterns</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+    <div class="container marketing" id="marketing">
+
+      <!-- Three columns of text below the carousel -->
+
+
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
+
+        <div class="row">
+          <div class="col-lg-4">
+
+            <img class="marketing-img" src="images/4.jpg" alt="">
+            <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          </svg> -->
+            <h2>Rectangular shapes</h2>
+            <p>Essential, classic lantern shapes.</p>
+            <p><a class="btn btn-secondary" href="#">See more &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="marketing-img" src="images/5.jpg" alt="">
+            <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          </svg> -->
+            <h2>Round shapes</h2>
+            <p>Elegant, stylish lantern shapes.</p>
+            <p><a class="btn btn-secondary" href="#">See more &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="marketing-img" src="images/6.jpg" alt="">
+
+            <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          </svg> -->
+
+            <h2>Other shapes</h2>
+            <p>Unique, creative lantern shapes.</p>
+            <p><a class="btn btn-secondary" href="#">See more &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div>
+
+
+      <!-- embedded video -->
+
+
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <div id="video">
+          <h1>Check out our lanterns in action</h1>
+          <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FFwrS7UtACw?start=62"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider" id="featurette">
+
+
+      <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="row featurette ">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Over 500 years of experience. <span class="text-muted">A celebrated
+                history.</span></h2>
+            <p class="lead">The history of our company begins in Uji, Japan.
+              In the year 1400, our founder and the very first paper lantern master created the very first lantern under
+              the 灯台 brand, as a personal gift to the emperor.
+              From that moment, our company has gone from strength to strength, customizing paper lanterns for important
+              events year after year.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-img" src="images/7.jpg" alt="">
+            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg> -->
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">We hand make all our products. <span class="text-muted">See for
+                yourself.</span></h2>
+            <p class="lead">We seamlessly combine modern machinery with traditional techniques,
+              handmaking all our paper lanterns with centuries of artisinal pride.
+              Each of our product comes with centuries of craftsmanship, handed down through the centuries from master
+              to apprentice.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-img" src="images/8.jpg" alt="">
+            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg> -->
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Let your events soar using our lanterns. <span
+                class="text-muted">Customization available.</span></h2>
+            <p class="lead">Let our artists work with you to customize lanterns tailored to your every need. </p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-img" src="images/9a.jpg" alt="">
+
+            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+          </svg> -->
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div id="contact-us">
+        <div class="color-overlay">
+          <div class="contact-us-text text-center">
+            <h1>Talk to an advisor</h1>
+            <p>Our advisors can walk you through the entire process, starting from design all the way to set up,
+              as well as give you suggestions on design ideas that best complement your event.</p>
+            <p><a class="btn btn-lg btn-success" href="mailto: tue.quang.tran@gmail.com">Schedule a call</a></p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+    <!-- FOOTER -->
+
+
+    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <footer class="container" id="footer">
+        <div class="footer">
+          <p class="float-none"><a href="#">Back to top</a></p>
+          <!-- <p>&copy; 2021 Designed, created, and coded by Tue Tran</p> -->
+          <p>&copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script> Designed, created, and coded with ❤ by Tue Tran
+          </p>
+          <p>Contact me:</p>
+          <p><a href="mailto: tue.quang.tran@gmail.com">email</a> &middot <a
+              href="https://www.facebook.com/tktuetran">facebook</a> &middot; <a
+              href="https://twitter.com/TKTueTran">twitter</a></p>
+        </div>
+        <div class="container-fluid text-funfact text-center">
+          <p class="typewrite" data-period="2000" data-type="[
+                &quot;I'm an American full stack web developer/web designer&quot;,
+                &quot;I have a passion for computer logic, web design, and love to create programs for web/mobile devices&quot;,
+                &quot;I'm currently available for full-time developer positions&quot;,
+                &quot;HTML, CSS, Bootstrap, Javascript, EJS, jQuery, Node.js, React.js, SQL, MongoDB, you name it, I know it&quot;,
+                &quot;Let me handle all your full stack web needs. Get in touch!&quot;,
+                &quot;I'm a native English speaker, am fluent in Vietnamese and have JLPT N1 Japanese qualifications&quot;,
+                &quot;I have a passion for computer logic, web design, and love to create programs for web/mobile devices&quot;,
+                &quot;Check out the links to see more of my portfolio&quot;
+                ]"><span class="wrap"></span></p>
+        </div>
+      </footer>
+    </div>
+
+
+
+
+  </main>
+
+  <!-- Do the wave!! -->
+
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="#b67162" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="#e4d3cf" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#9e9d89" />
+      </g>
+    </svg>
+  </div>
+
+
+  <script src="typewrite.js" type=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
